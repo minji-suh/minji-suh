@@ -3,10 +3,10 @@
         #columns{
             column-width: 290px;
             column-gap: 0;
-            max-width: 1920px;
+/*             max-width: 1920px; */
             justify-content: center;
             margin:0 auto 10%;
-            padding: 150px 6% 0;
+            padding: 160px 4% 0;
             
         }
 
@@ -18,12 +18,12 @@
             position: relative;
             margin: 0;
             margin-bottom: 10px;
-            padding: 6%;
+            padding: 4%;
         }
         #img{
-            max-height: 1000px;
+/*             max-height: 1000px; */
             overflow: hidden;
-            border-radius: 5px;
+            border-radius: 3px;
             }  
 
         #columns figure:hover{

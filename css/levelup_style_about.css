@@ -1,0 +1,77 @@
+.profile{
+    top: 190px;
+    height: 70vh;
+    position: relative;
+}
+
+.group{
+    width: 100%;
+    height: 597px;
+    position: relative;
+    top: 15%;
+}
+.group .profile_img{
+    border-radius: 5px;
+    margin-bottom: 10%;
+    margin-left: -400px;
+    position: absolute;
+    left: 50%;
+    width: 400px; 
+    height: 597px;
+    background-image: url(profile.jpg);
+    background-size: cover;
+    background-position-x:center;
+}
+.grabox{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url(gra.png);
+    background-size: cover;
+    height: 70vh;
+}
+
+.group .profile_txt{
+    width: 400px;
+    padding-top: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.myname{
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+    font-size: 2rem;
+}
+
+.group .profile_txt h2, .contact h2{
+    margin-top: 10px;
+    font-weight: 300;
+    color: #999;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+.group .profile_txt p, .contact p{
+    margin-top: 50px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    padding-left: 8px;
+}
+
+.contact{
+/*    top: 757px;*/
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: 5%;
+    text-align: left;
+}
+.contact p{
+    margin-top: 10px;
+}

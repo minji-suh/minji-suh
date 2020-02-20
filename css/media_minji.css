@@ -1,0 +1,142 @@
+@media screen and (max-width:700px){
+    ul span{
+        display: none;
+    }
+    .nav_ico,.pp_mo{
+        display: block;
+    }
+    .subtitle{
+        display: inline;
+    }
+ 
+    .menu li{
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        opacity: 0;
+        transition: opacity 0.7s;
+    }
+    .menu{
+        height: 0;
+        margin:0;
+        padding: 0;
+        opacity: 0;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .menu, .pp {
+        display: none;
+    }
+   
+    .menu.responsive {
+        height: 290px;
+        opacity: 1;
+        display: block;
+        position: relative;
+        margin: 50px 0 16px;
+        padding-top: 10px;
+        border-top: 1px solid #292929;
+        transition: all 0.7s;
+    }
+    .menu.responsive a.active{
+        border-bottom: 1px solid #fff;
+    }
+    button{
+        position: absolute;
+        right: 6%;
+        display: inline;
+    }
+
+    .menu.responsive li{
+        opacity: 1;
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        transition: opacity 0.7s;
+    }
+    .menu.responsive a::before {
+        opacity: 0;
+    }
+    #columns{
+        column-width: 150px;
+        padding-top: 90px;
+    }
+    #columns figure figcaption{
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #columns figure{
+        padding: 6% 6% 4%;
+    }
+    
+    
+    
+/* aboutme */
+    .profile{
+        top: 0;
+        padding: 20% 10% 10%;
+    }
+    .group .profile_img{
+        max-height: 120vh;
+        width: 100%;
+        left: 0;
+        margin: 0 auto;
+    }
+    .group .profile_txt, .contact{
+        width: 100%;
+        top: 80vh;
+        margin: 0;
+        left: 0;
+        position: relative;
+    }
+    .contact{
+        margin: 60px 0 120px 0;
+    }
+    .intro_p p{
+        padding-top: 20px;
+    }
+    .intro{
+      margin-top: -100px;
+    }
+    .group{
+        top: 6.5%;
+        margin-top: 0;
+        height: 120vh;
+    }
+    .grabox{
+        display: block;
+    }
+        
+}
+
+
+@media (min-width:701px) and (max-width:900px){
+    .profile{
+        padding:10%;
+    }
+    .group{
+        top: 0;
+        margin-top: 0;
+    }
+    .group .profile_img{
+        width: 300px;
+        margin-left: 0;
+        left: 0;
+        height: 570px;
+    }
+    .group .profile_txt{
+        width: 300px;        
+        padding-top: 20px;
+    }
+    .group .profile_txt h2, .contact h2{
+        font-size: 1.2rem;
+    }
+    .group .profile_txt p, .contact p{
+        font-size: 1rem;
+    }
+    .contact{
+        bottom: 20px;
+    }
+}

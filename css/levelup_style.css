@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #111;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1;
+    text-align: center;
+    height: 100vh;
+    }
+
+
+/*GNB*/
+.gnb{
+    background-color: #333; 
+    text-align: center; 
+    width: 100%;
+    padding: 30px 0 16px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+
+.subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000;
+    margin: -0.2rem 0;
+    right: 26px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    transition:all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.subtitle.on{
+    font-weight: 300;
+    color: #fff;
+    transition:all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.gnb.mo{
+    position: relative;
+    margin-bottom: -80px;
+    }
+
+.gnb.nav_up{
+    top: -122px;
+}
+
+button{
+    background-color: #333;
+    display: none;
+    border: 0px solid #fff;
+}
+
+.logo{
+    width: 80px;
+    left: 50%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    }
+
+.logoarea{
+    z-index: -100;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+}
+
+.menu{
+    transition: all 0.3s;
+    opacity: 1;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    }
+
+.menu a{
+    color: #888;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+    margin: 0 0.2rem;
+    z-index: 1;
+    }
+
+li{
+    width: 15%;
+    list-style: none;
+    display: inline-block;
+    }
+
+.menu a::before {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    height: 1px;
+    background: #fff;
+    opacity: 0;
+    content: '';
+    z-index: -1;
+    transition-property: all;
+    -webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.nav_ico{
+    border: none;
+    display: none;
+    margin-top: 3px;
+    width: 18px;
+    height: 10px;
+    background: #333 url(nav_ico_2.png) no-repeat;
+    background-size: contain;
+    opacity: 1;
+    background-position: center;
+    
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition:all 0.3s;
+    transition-timing-function: ease-in-out;
+    }
+
+.nav_ico.filp_v{
+    opacity: 0.7;
+    background: #333 url(nav_ico_2_w.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition:all 0.3s;
+    transition-timing-function: ease-in-out;
+    }
+
+a.active {
+    color: #fff;
+}
+a.active::before {
+    width: 100%;
+    color: #fff;
+    opacity: 1;
+    top: 110%;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    background: #fff;
+    content: '';
+    z-index: -1;
+    transition-property: all;
+    -webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+
+
+
+
+/*GNB:hov_actions*/
+
+.nav_ico:focus,:active,
+.menu a:focus {
+    outline: none;
+    color: #fff;
+    z-index: -10;
+    }
+
+.menu a:hover,:active,:focus{
+    color: #fff;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.menu a:hover::before,
+.menu a:focus::before{
+    opacity: 1;
+    top: 110%;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+
+/*INTRO*/
+.intro{
+    height: 165px;
+    position: relative;
+    vertical-align: middle;
+    color: #888;
+    font-size: 2rem;
+    line-height: 1.5;
+    top: 50%;
+    margin-top: -50px;
+}
+.introtext{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.intro_p{
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 51%;
+}
+.intro_p a{
+    color:dodgerblue
+}
+.intro_p a:hover{
+    text-decoration: underline;
+}
+
+.intro_p p{
+    border-top: 1px solid #333; 
+    padding-top: 30px;
+    line-height: 1.5;
+    color: #555;
+    font-size: 1rem;
+}
+
+.pp{
+    color: #888;
+}
+
+.pp_mo{
+    color: #888;
+    display: none;
+    line-height: 1.2;
+}
+
+.name,.name.name2,.name2.logo {
+    opacity: 0.5;
+    margin-top: 2.4rem;
+    line-height: 0;
+    font-size: 3rem;
+    letter-spacing: 3;
+    font-family: 'Nanum Square';
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.name{
+    margin-top: 2.2rem;
+    font-weight: 400;
+}
+
+.name.name2{
+    opacity: 1;
+    letter-spacing: 1.7;
+    font-weight: 500;
+}
+.name2.logo{
+    width: 118px;
+    height: 32px;
+    margin-top: 1.6rem;
+    background-image: url(symbol2_w.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}

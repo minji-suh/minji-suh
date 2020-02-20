@@ -12,6 +12,7 @@
         #columns figure{
             font-weight: 400;
             color: #666;
+            width: 90%;
             display: inline-block;
             top: 10px;
             position: relative;
@@ -20,7 +21,6 @@
             padding: 4%;
         }
         #img{
-            min-width: 290px;
             overflow: hidden;
             border-radius: 3px;
             }  
